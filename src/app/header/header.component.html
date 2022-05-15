@@ -1,0 +1,9 @@
+
+<div class="header">
+    <h3>Magic Book</h3>
+    <a routerLink="/Login" (click)="dashboardshow()" >Login</a>
+</div>
+
+<div *ngIf="isShown" id="divshow">
+<app-dashboard></app-dashboard>
+</div>

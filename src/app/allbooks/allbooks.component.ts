@@ -9,19 +9,17 @@ export interface Tile {
   img : string;
 }
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-allbooks',
+  templateUrl: './allbooks.component.html',
+  styleUrls: ['./allbooks.component.css']
 })
-export class HomeComponent implements OnInit {
+export class AllbooksComponent implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
   tiles: Tile[] = [
     {title: 'One', cols: 1, rows: 2, color: 'lightblue', desc: 'Book1', img: "https://covers.zlibcdn2.com/covers299/books/7a/09/81/7a0981972454dd0a9de9cfa171c9da47.jpg"},
     {title: 'Two', cols: 1, rows: 2, color: 'lightgreen',desc: 'Book1', img:"https://covers.zlibcdn2.com/covers299/books/70/32/d8/7032d82ffdc013053cb5ba5e04c8bc74.jpg"},
@@ -41,7 +39,5 @@ export class HomeComponent implements OnInit {
     alert("added to complete list");
     this.router.navigate(['Completebook']);
   }
-
-  
 
 }

@@ -1,0 +1,18 @@
+<p>wishlist works!</p>
+
+<button type="submit" (click)="add()">submit</button>
+
+<div class="section2">
+    <mat-grid-list cols="7" rowHeight="100px" [gutterSize]="'10px'" >
+        <mat-grid-tile *ngFor="let data of tiles"
+        >
+        <div class="cards">
+         <img src="{{data.img}}">
+         <h2>{{data.title}} </h2>
+         <h3>{{data.desc}}</h3> 
+         
+        </div>
+        </mat-grid-tile>
+        
+      </mat-grid-list>
+    </div>

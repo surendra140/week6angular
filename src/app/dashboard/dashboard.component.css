@@ -1,0 +1,22 @@
+mat-grid-tile {
+    background: lightblue;
+  
+    border-radius: 5px;
+   
+  }
+
+  .cards img {
+      margin-top: 10px;
+      border-radius: 5px;
+      height: 110px;
+      width: 140px;
+  }
+
+  .cards h2{  
+    margin-top: 10px; 
+    text-align: center;
+  }
+  .cards h3{
+      margin-top: -20px;
+      text-align: center;
+  }
