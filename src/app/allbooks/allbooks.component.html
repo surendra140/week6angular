@@ -10,7 +10,8 @@
          <h2>{{tile.title}} </h2>
          <h3>{{tile.desc}}</h3> 
          <div class="btnbox">
-         <button id="loginBtn" type="submit" [routerLink]="['/Wishlist']" [state]="{ data:tile}" (click)="addWishlist()" mat-raised-button color="#3232a8">WishList</button>
+         <input type="submit" value="Submit" id="submitbtn" [(ngModel)] = "tile.title">
+         <button id="loginBtn" type="submit" [routerLink]="['/Wishlist']"  mat-raised-button color="#3232a8">WishList</button>
          <button id="loginBtn" type="submit" (click)="addCompletelist()" mat-raised-button color="#3232a8">Complete</button>
          </div>
         </div>
